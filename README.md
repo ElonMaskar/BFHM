@@ -41,3 +41,14 @@ To use our code, first clone this repository:
 ```bash
 git clone https://github.com/ElonMaskar/image-matting.git
 cd image-matting
+Then, install the required packages:
+pip install -r requirements.txt
+You can train a new model using the following command:
+python train.py --data_dir /path/to/data --log_dir /path/to/logs
+You can evaluate a trained model using the following command:
+python evaluate.py --data_dir /path/to/data --model_path /path/to/model --output_dir /path/to/output
+```
+
+## Acknowledgements
+
+We would like to thank the authors of the Adobe DIM dataset for making their data available for research purposes. We would also like to acknowledge the helpful discussions with the members of the computer vision research community.
